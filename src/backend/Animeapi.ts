@@ -10,7 +10,7 @@ const AnimeProviders = {
 export type AnimeProvider = keyof typeof AnimeProviders;
 
 export class Animeapi {
-  host = "https://api.consumet.org";
+  host = "https://animxer-api-cvxg.vercel.app/";
   provider;
 
   constructor(provider: AnimeProvider = "GOGO") {
@@ -43,7 +43,7 @@ export class Animeapi {
 
   async getRecentEpisodes(params = {}) {
     return await axios.get(
-      "https://anidote-api.vercel.app/anime/gogoanime/recent-episodes"
+      "https://animxer-api-cvxg.vercel.app/anime/gogoanime/recent-episodes"
     );
   }
 
@@ -63,7 +63,7 @@ export class Animeapi {
 
   async getInfo(id) {
     return (
-      await axios.get(`https://api.consumet.org/anime/gogoanime/info/${id}`)
+      await axios.get(`https://animxer-api-cvxg.vercel.app/anime/gogoanime/info/${id}`)
     ).data;
   }
 }
