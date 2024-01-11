@@ -18,7 +18,7 @@ app.get("/api/anilist/popular", async (req, res) => {
   try {
     // Forward the request to the external API
     const apiResponse = await axios.get(
-      "https://anidote-api.vercel.app//meta/anilist/popular"
+      "https://animxer-api-cvxg.vercel.app/meta/anilist/popular"
     );
     // Send the response of the external API back to your frontend
     res.json(apiResponse.data);
