@@ -35,7 +35,7 @@ const Navbar = forwardRef(({ user, onSignInClick, onSignOutClick }) => {
       setResults([]);
       return;
     }
-    fetch(`https://api.consumet.org/anime/gogoanime/${e.target.value}?page=1`)
+    fetch(`https://animxer-api-cvxg.vercel.app/anime/gogoanime/${e.target.value}?page=1`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data.results);
